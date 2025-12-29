@@ -21,6 +21,8 @@ class UnrealAutomationGUI:
         
         # 아이콘 설정
         icon_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'icon.ico')
+        icon_path = os.path.abspath(icon_path)
+        
         if os.path.exists(icon_path):
             self.root.iconbitmap(icon_path)
         
